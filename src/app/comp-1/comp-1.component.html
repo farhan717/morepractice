@@ -1,9 +1,19 @@
 
   Here is the Title 
-  <h2> {{getTitle()}} </h2>
+  <h2> {{getTitle()| Summary}} </h2>
+  <h2> {{getTitle()| Summary: 20}} </h2>
 
   <ul>
     <li *ngFor = "let course of courses ">
       {{course}}
     </li>
   </ul>
+
+  <!-- <form class = "container"
+  [formGroup] = "amarform"> -->
+    <button class = "btn btn-primary" type="button" (click)="buttonPressed()">Change The Image</button>
+  <!-- </form> -->
+
+  <img [src]= 'imgURL'>
+
+  {{title|Summary}}
